@@ -1,12 +1,9 @@
 ---
-- name: Test my module
-  hosts: localhost
-  tasks:
-  - name: Run module
-    my_module:
-      name: {{ file_name }}
-      path: {{ file_path }}
-      content: {{ file_content }}
-    register: module_out
-  - debug:
-      var: module_out
+- name: Run module
+  my_module:
+    name: "{{ file_name }}"
+    path: "{{ file_path }}"
+    content: "{{ file_content }}"
+  register: module_out
+- debug:
+    var: module_out

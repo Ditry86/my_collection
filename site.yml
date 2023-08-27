@@ -1,4 +1,4 @@
 - name: Test my module
   hosts: localhost
   roles:
-    - my_role
+    - role: ditry86.my_collection. my_role
