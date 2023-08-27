@@ -1,0 +1,4 @@
+- name: Test my module
+  hosts: localhost
+  roles:
+    - my_role
